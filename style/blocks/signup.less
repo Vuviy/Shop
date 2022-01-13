@@ -1,0 +1,49 @@
+// main: ../style.less
+
+
+.singup-form{
+  margin: 0 auto;
+  width: 500px;
+  @media (max-width: 500px) {
+    width: 80%;
+  }
+  & p{
+    color: #000;
+    margin-bottom: 0;
+  }
+  & .wrong-text{
+      color: red
+    }
+  & input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 10px;
+  }
+  & .bbb{
+    // border: 2px solid red;
+  }
+  & button{
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    background: #000;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+  }
+}
+
+.congrat{
+  font-size: 36px;
+}
+
+.singup-form .wrong{
+  margin-bottom: 20px;
+  color: red;
+  padding: 10px;
+  background: rgba(255, 0, 0, 0.233);
+  border-radius: 10px;
+  display: block;
+}

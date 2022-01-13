@@ -1,0 +1,177 @@
+// main: ../style.less
+
+.bucket-inner{
+  display: flex;
+  flex-wrap: wrap;
+ & .good-bucket{
+  display: flex;
+  height: auto;
+  flex: 1 1 30%;
+  max-width: 50%;
+  padding: 15px 50px;
+  font-size: 20px;
+  border-bottom: 2px  solid #ccc;
+  margin: 10px;
+  @media (max-width: 1000px) {
+      flex: 0 0 80%;
+  }
+  @media (max-width: 500px) {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 15px;
+    flex-direction: column;
+    height: auto;
+  }
+  &:hover{
+    background: rgba(0, 0, 0, 0.047);
+  }
+  &-img{
+    width: 40%;
+    height: 90%;
+    margin-right: 40px;
+    @media (max-width: 500px) {
+      margin: 0 auto;
+      width: 90%;
+      height: 400px;
+      margin-bottom: 10px;
+    }
+    & img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    @media (max-width: 500px) {
+      margin: 0 auto;
+      width: 90%;
+      height: auto;
+    }
+  }
+  &-title{
+    color: black;
+    @media (max-width: 500px) {
+      margin: 0;
+      margin-left: 60px;
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+  }
+  & .bucket-close-btn{
+    width: auto;
+    position: absolute;
+    top: 0;
+    right: -40px;
+    @media (max-width: 500px) {
+      left: 5px;
+      width: 50px;
+    }
+  }
+  & .btn-close-bucket{
+    padding: 0;
+    background: transparent;
+    border: none;
+    &:hover{
+      background: rgba(255, 0, 0, 0.432);
+    }
+  }
+  & .close-btn-bucket{
+    width: 30px;
+    height: 30px;
+    fill: rgba(255, 0, 0, 0.616);
+    @media (max-width: 500px) {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  &-article{
+    margin-bottom: 5px;
+    font-size: 14px;
+    @media (max-width: 500px) {
+      margin-bottom: 10px;
+    }
+  }
+  &-price{
+    margin-bottom: 5px;
+    font-size: 30px;
+    @media (max-width: 500px) {
+        margin: 0;
+        margin-bottom: 5px;
+    }
+  }
+  &-sizes{
+    display: flex;
+    margin-bottom: 5px;
+    & .size-value{
+      text-transform: uppercase;
+    }
+  }
+  &-quantity{
+      margin-bottom: 50px;
+      @media (max-width: 500px) {
+        margin-bottom: 10px;
+    }
+
+      & input{
+        width: 30px;
+        height: 30px;
+        position: relative;
+        text-align: center;
+        border: none;
+      }
+      & a{
+        background: transparent;
+        border: none;
+        position: relative;
+        & .arrow{
+          width: 28px;
+          height: 12px;
+          position: absolute;
+          left: -28px;
+        }
+        & .up{
+          top: -20px;
+          transform: rotate(180deg);
+        }
+        & .down{
+          bottom: -20px;
+          left: -28px;
+        }
+      }
+    }
+}
+}
+
+
+.bue-bucket{
+  width: 90%;
+  background: rgba(167, 167, 167, 0.534);
+  border-radius: 10px;
+  padding: 30px;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: 500px) {
+      width: 80%;
+      padding: 30px 10px;
+    }
+  & .bye-btn-bucket{
+    background: #000;
+    text-transform: uppercase;
+    font-size: 26px;
+    padding: 10px 30px;
+    color: #fff;
+    margin: 0 auto;
+    white-space:nowrap;
+    @media (max-width: 500px) {
+    padding: 10px;
+    font-size: 15px;
+    
+    }
+
+  }
+  
+}

@@ -1,0 +1,89 @@
+body{
+  margin: 0;
+  padding: 10px;
+}
+.enter-form{
+margin: 10% auto;
+background: rgba(0, 0, 0, 0.26);
+padding: 30px;
+border-radius: 20px;
+width: 300px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+input{
+  height: 40px;
+  margin-bottom: 30px;
+  padding: 0 10px;
+}
+input[name=enter]{
+  margin-bottom: 0;
+}
+
+
+.container{
+  border: 2px solid #ccc;
+  width: auto;
+  padding: 10px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.bio{
+  width: auto;
+  border: 2px solid rgb(161, 163, 204);
+  margin-right: 10px;
+}
+.bio p{
+  margin: 0;
+  padding: 5px 0px;
+}
+.orders-container{
+  width: 100%;
+
+}
+.order{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: 2px solid rgb(161, 163, 204);
+  margin-bottom: 10px;
+  height: 90px;
+}
+
+.order div{
+  width: auto;
+  border: 1px solid rgb(150, 150, 150);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
+}
+.order div p{
+  padding: 0;
+  margin: 0;
+  background: rgba(144, 185, 136, 0.548);
+}
+.order div input{
+  width: 100%;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  display: block;
+  /* flex: 1 1 auto; */
+}
+.order .small{
+  width: 55px;
+}
+.order .date{
+  width: 100px;
+}
+.order .size input{
+  text-transform: uppercase;
+}
+input[value=оновити]{
+  background: rgba(42, 197, 75, 0.562);
+  border: 1px solid #000;
+}
